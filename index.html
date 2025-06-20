@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offsetease – Carbon Management Company</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN for vector icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* Explicitly white background */
+            color: #333333;
+        }
+        /* Custom styles for Lucide icons to ensure consistent sizing and alignment */
+        .lucide-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .section-padding {
+            padding: 4rem 1rem; /* Responsive padding for sections */
+        }
+        @media (min-width: 640px) { /* Small screens and up */
+            .section-padding {
+                padding: 6rem 2rem;
+            }
+        }
+        @media (min-width: 1024px) { /* Large screens and up */
+            .section-padding {
+                padding: 8rem 4rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo & Company Name -->
+            <div class="flex items-center">
+                <!-- Placeholder for Logo - Replace with your actual logo URL -->
+                <!-- For example: <img src="your-logo-url.png" alt="Offsetease Logo" class="h-8 w-auto mr-2 rounded-md"> -->
+                <div class="h-8 w-8 bg-gray-200 rounded-md flex items-center justify-center mr-2">
+                    <span class="text-gray-600 font-bold text-lg">O</span>
+                </div>
+                <h1 class="text-2xl font-bold text-gray-800">Offsetease</h1>
+            </div>
+            <!-- Navigation Links (can be expanded later if needed) -->
+            <nav>
+                <!-- For a simple site, navigation might just be section scrolling or minimal -->
+                <!-- <a href="#what-we-do" class="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md transition-colors duration-200">What We Do</a> -->
+                <!-- <a href="#contact" class="text-gray-600 hover:text-green-600 px-3 py-2 rounded-md transition-colors duration-200">Contact</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-padding text-center bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                Empowering Businesses to Lead the Climate Transition
+            </h2>
+            <p class="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Offsetease is a consulting firm providing climate strategy, environmental markets expertise, and sustainability advisory for corporations and MSMEs. Our mission is to help businesses take measurable, compliant, and finance-ready climate action.
+            </p>
+            <button class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105">
+                Learn More
+            </button>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section id="what-we-do" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">What We Do</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <!-- Carbon Market Solutions -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span data-lucide="leaf" class="lucide-icon text-green-600"></span>
+                        <h4 class="text-xl font-semibold text-gray-800">Carbon Market Solutions</h4>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Development of Nature-Based, Engineered, and Community-Driven Emission Reduction Projects. Full project cycle support—from ideation to credit issuance.
+                    </p>
+                </div>
+
+                <!-- Environmental Attribute Trading -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span data-lucide="bar-chart-2" class="lucide-icon text-green-600"></span>
+                        <h4 class="text-xl font-semibold text-gray-800">Environmental Attribute Trading</h4>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Trading of Carbon Credits, RECs, and other verified instruments. Transparent deal facilitation with pricing intelligence and due diligence.
+                    </p>
+                </div>
+
+                <!-- Sustainability Consulting -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span data-lucide="briefcase" class="lucide-icon text-green-600"></span>
+                        <h4 class="text-xl font-semibold text-gray-800">Sustainability Consulting</h4>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-2">Sector-specific support for Chemicals, Textiles, Pharma, Engineering, Gems, and Steel. Services include:</p>
+                    <ul class="list-disc list-inside text-gray-700 pl-4">
+                        <li>GHG Inventory & SBTi Alignment</li>
+                        <li>ESG, LCA, CBAM, BRSR, CDP, GRI Reporting</li>
+                        <li>Scope 3 & Net Zero Roadmaps</li>
+                    </ul>
+                </div>
+
+                <!-- Decarbonization Financing -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-transform duration-300 hover:scale-105">
+                    <div class="flex items-center mb-4">
+                        <span data-lucide="dollar-sign" class="lucide-icon text-green-600"></span>
+                        <h4 class="text-xl font-semibold text-gray-800">Decarbonization Financing</h4>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Helping MSMEs in energy-intensive sectors access green finance. End-to-end support for programs like SIDBI MSE-GIFT and international climate funds.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Offsetease Section -->
+    <section class="section-padding bg-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-12">Why Offsetease?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-start">
+                    <span data-lucide="check-circle" class="lucide-icon text-green-600 mt-1 flex-shrink-0"></span>
+                    <p class="text-lg text-gray-700 font-medium">Integrated Climate & Market Expertise</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-start">
+                    <span data-lucide="check-circle" class="lucide-icon text-green-600 mt-1 flex-shrink-0"></span>
+                    <p class="text-lg text-gray-700 font-medium">Global Framework Alignment (IPCC, GHG Protocol, SBTi, CDP)</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-start">
+                    <span data-lucide="check-circle" class="lucide-icon text-green-600 mt-1 flex-shrink-0"></span>
+                    <p class="text-lg text-gray-700 font-medium">Solutions for Policy Impact, Risk Reduction & Compliance</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md flex items-start">
+                    <span data-lucide="check-circle" class="lucide-icon text-green-600 mt-1 flex-shrink-0"></span>
+                    <p class="text-lg text-gray-700 font-medium">Tailored Support for MSMEs and High-Impact Sectors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="section-padding text-center bg-green-700 text-white">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <h3 class="text-3xl md:text-4xl font-bold mb-8">Let’s Work Together</h3>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+                <p class="text-lg flex items-center">
+                    <span data-lucide="map-pin" class="lucide-icon text-white"></span>
+                    Ahmedabad & Pune, India
+                </p>
+                <p class="text-lg flex items-center">
+                    <span data-lucide="mail" class="lucide-icon text-white"></span>
+                    <a href="mailto:contact@offsetease.com" class="hover:underline">contact@offsetease.com</a>
+                </p>
+            </div>
+            <p class="text-xl font-semibold mt-4">Offsetease – Strategic Climate Advisory for Business Impact</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; <span id="current-year"></span> Offsetease. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
